@@ -14,7 +14,7 @@ const Header = () => {
                         <Nav.Link as={Link} to="/" className="nav.link">stock-exchange</Nav.Link>
                         <Nav.Link as={Link} to="/stock-exchange" className="nav.link">post-stock-exchange</Nav.Link>
                         <Nav.Link as={Link} to="/fetch-exchange" className="nav.link">FetchStockExchnageDetailByName</Nav.Link>
-                        {/* <Nav.Link as={Link} to="/update-exchange" className="nav.link">update-stock-price</Nav.Link>*/}
+                        <Nav.Link as={Link} to="/update-exchange" className="nav.link">update-stock-price</Nav.Link>
                         <Nav.Link as={Link} to="/add-stock-to-exchange" className="nav.link">AddStockToExchange</Nav.Link>
                     </Nav>
                 </Container>

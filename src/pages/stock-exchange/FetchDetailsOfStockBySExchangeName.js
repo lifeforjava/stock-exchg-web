@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./App1.css";
+import "./FetchDetailsOfStockBySExchangeName.css";
 
 const App = () => {
   const [stockExchangeName, setStockExchangeName] = useState("");
   const [stockExchange, setStockExchange] = useState(null);
   // Fetch stock exchange by name
-  const fetchStockExchange = async () => {
+  const FetchDetailsOfStockBySExchangeName = async () => {
     try {
       const response = await axios.get(`http://localhost:8080/api/v1/stock-exchange/${stockExchangeName}`);
       setStockExchange(response.data);
@@ -28,7 +28,7 @@ const App = () => {
           value={stockExchangeName}
           onChange={(e) => setStockExchangeName(e.target.value)}
         />
-        <button onClick={fetchStockExchange}>Fetch</button>
+        <button onClick={FetchDetailsOfStockBySExchangeName}>Fetch</button>
         {stockExchange && (
           <div className="stock-exchange-details">
             <h3>{stockExchange.name}</h3>
